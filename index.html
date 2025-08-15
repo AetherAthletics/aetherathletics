@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Streamer University Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #800000;
+        }
+
+        p.description {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .gender, .hobbies {
+            margin-bottom: 15px;
+        }
+
+        .gender label, .hobbies label {
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        .btn {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #a00000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images.jpeg" alt="Streamer University Logo" class="logo">
+        <h2>Streamer University Registration Form</h2>
+        <p class="description">
+            Welcome to Streamer University! Please fill out the form below to get started.
+        </p>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact">
+
+            <div class="gender">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <div class="hobbies">
+                <label>Hobbies:</label>
+                <label><input type="checkbox" name="hobby" value="swimming"> Swimming</label>
+                <label><input type="checkbox" name="hobby" value="biking"> Biking</label>
+                <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+                <label><input type="checkbox" name="hobby" value="watching"> Watching TV</label>
+                <label><input type="checkbox" name="hobby" value="playing"> Playing</label>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
