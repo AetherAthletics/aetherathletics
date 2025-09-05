@@ -1,122 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Streamer University Registration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 700px;
-            margin: 30px auto;
-            background: white;
-            padding: 20px 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-
-        .logo {
-            display: block;
-            margin: 0 auto 20px;
-            width: 150px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #800000;
-        }
-
-        p.description {
-            font-size: 14px;
-            color: #555;
-            text-align: center;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-
-        input[type="text"], input[type="email"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-        }
-
-        .gender, .hobbies {
-            margin-bottom: 15px;
-        }
-
-        .gender label, .hobbies label {
-            font-weight: normal;
-            margin-right: 15px;
-        }
-
-        .btn {
-            background-color: #800000;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 15px;
-        }
-
-        .btn:hover {
-            background-color: #a00000;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike World - Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: black; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: orange; }
+    section { padding: 20px; text-align: center; }
+    img { max-width: 100%; height: auto; border-radius: 10px; margin: 15px 0; }
+    footer { background: black; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Welcome to Nike World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-    <div class="container">
-        <img src="images.jpeg" alt="Streamer University Logo" class="logo">
-        <h2>Streamer University Registration Form</h2>
-        <p class="description">
-            Welcome to Streamer University! Please fill out the form below to get started.
-        </p>
+  <section>
+    <h2>Just Do It</h2>
+    <p>Nike inspires athletes around the world with innovative footwear, apparel, and equipment.</p>
+    <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/90352c52-041d-4c43-bb6b-3a3e53e7b8eb/nike-just-do-it.jpg" alt="Nike Just Do It Banner">
+    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/54c6b292-2f71-4b3c-a853-6d1dbe5285bd/air-force-1-07-shoes-WrLlWX.png" alt="Nike Air Force 1 Shoes">
+  </section>
 
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+  <footer>
+    <p>&copy; 2025 Nike World | Just Do It</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike World - Products</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: black; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: orange; }
+    section { padding: 20px; text-align: center; }
+    .product { margin: 20px; display: inline-block; width: 250px; background: white; padding: 15px; border-radius: 10px; vertical-align: top; }
+    img { width: 100%; border-radius: 10px; }
+    footer { background: black; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nike Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address">
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="contact">Contact Number:</label>
-            <input type="text" id="contact" name="contact">
-
-            <div class="gender">
-                <label>Gender:</label>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-            </div>
-
-            <div class="hobbies">
-                <label>Hobbies:</label>
-                <label><input type="checkbox" name="hobby" value="swimming"> Swimming</label>
-                <label><input type="checkbox" name="hobby" value="biking"> Biking</label>
-                <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
-                <label><input type="checkbox" name="hobby" value="watching"> Watching TV</label>
-                <label><input type="checkbox" name="hobby" value="playing"> Playing</label>
-            </div>
-
-            <button type="submit" class="btn">Submit</button>
-        </form>
+  <section>
+    <h2>Our Best Sellers</h2>
+    <div class="product">
+      <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/2b56c8c1-9c6d-4cc6-8717-1e5a6e4f93a7/air-jordan-1-mid-shoes-BpARGV.png" alt="Air Jordan 1">
+      <h3>Air Jordan 1</h3>
+      <p>Classic basketball shoes with timeless style.</p>
     </div>
+    <div class="product">
+      <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/82a59d1f-bd3f-4506-8b88-0506a1a22a57/air-max-90-shoes-KPVlKJ.png" alt="Air Max 90">
+      <h3>Air Max 90</h3>
+      <p>Iconic running shoes with maximum comfort.</p>
+    </div>
+    <div class="product">
+      <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/eefdbf9a-3b6d-408d-a78a-35283e2f9a14/metcon-9-training-shoes-6VzqBL.png" alt="Nike Metcon">
+      <h3>Nike Metcon 9</h3>
+      <p>Perfect training shoes for strength and endurance.</p>
+    </div>
+    <div class="product">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c200a12d-92d0-4a3c-89c1-7e50eec4b09b/nike-sportswear-club-fleece-hoodie.png" alt="Nike Hoodie">
+      <h3>Nike Hoodie</h3>
+      <p>Cozy fleece hoodie with the iconic Nike logo.</p>
+    </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Nike World | Just Do It</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike World - About</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: black; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: orange; }
+    section { padding: 20px; text-align: center; }
+    img { max-width: 100%; height: auto; border-radius: 10px; margin: 15px 0; }
+    footer { background: black; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Nike</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Our Story</h2>
+    <p>Nike, founded in 1964 as Blue Ribbon Sports, officially became Nike, Inc. in 1971. Since then, it has grown into one of the world’s leading sportswear brands.</p>
+    <p>Our mission is to bring inspiration and innovation to every athlete in the world. If you have a body, you are an athlete.</p>
+    <p>From running shoes to lifestyle apparel, Nike continues to set the standard in sports fashion and performance gear.</p>
+    <img src="https://1000logos.net/wp-content/uploads/2017/03/Nike-logo.png" alt="Nike Logo">
+    <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/44e29b35-04f2-4047-b94a-3f8b8c9f7111/nike-campus.jpg" alt="Nike Campus">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nike World | Just Do It</p>
+  </footer>
 </body>
 </html>
